@@ -72,3 +72,8 @@ body {
   top: 0px;
   right: 350px;
 }
+
+.main-nav .signin {
+  color: var(--bluecolor);
+  font-weight: bold;
+}
