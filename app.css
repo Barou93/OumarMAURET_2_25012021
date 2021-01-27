@@ -28,6 +28,7 @@ html {
 
 body {
   overflow-x: hidden;
+  max-width: 1335px;
 }
 
 /*=======HEADER========*/
@@ -76,4 +77,19 @@ body {
 .main-nav .signin {
   color: var(--bluecolor);
   font-weight: bold;
+}
+
+/*=====Header paragraphe======*/
+
+.main-container {
+  position: relative;
+  top: 61px;
+}
+
+.main-container h1 {
+  font-size: 25px;
+}
+
+.main-container p {
+  margin-top: 25px;
 }
