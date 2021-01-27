@@ -1,0 +1,74 @@
+/*
+Charte graphique 
+  coleur princiaple bleu : #0065fc; 
+  coleur grise : #f2f2f2;
+
+*/
+
+/*=======GLOBAL STYLE======*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bluecolor: #0065fc;
+  --greycolor: #f2f2f2;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 25px;
+  padding: 25px;
+  max-width: 1440px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*=======HEADER========*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav .location {
+  color: var(--bluecolor);
+}
+
+.main-nav .location::after {
+  content: "";
+  border-top: 3px solid var(--bluecolor);
+  width: 125px;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  right: 350px;
+}
