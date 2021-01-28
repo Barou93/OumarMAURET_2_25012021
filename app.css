@@ -17,6 +17,7 @@ Charte graphique
 :root {
   --bluecolor: #0065fc;
   --greycolor: #f2f2f2;
+  --greydarkcolor: #d9d9d9;
 }
 
 html {
@@ -66,12 +67,12 @@ body {
 
 .main-nav .location::after {
   content: "";
-  border-top: 3px solid var(--bluecolor);
-  width: 125px;
+  border-top: 1px solid var(--bluecolor);
+  width: 165px;
   height: 10px;
   position: absolute;
-  top: 0px;
-  right: 350px;
+  top: 2px;
+  right: 320px;
 }
 
 .main-nav .signin {
@@ -170,6 +171,11 @@ input::placeholder {
   height: 50px;
 }
 
+.filter-categories:hover {
+  transition: 0.5s;
+  background: #deebff;
+  border: none;
+}
 .filter-categories .filter-icons {
   background-color: #deebff;
   height: 50px;
@@ -187,10 +193,37 @@ input::placeholder {
   font-weight: bold;
 }
 
+.filter-details:hover {
+  color: var(--bluecolor);
+}
+
 .family {
   width: 145px;
 }
 
 .animal {
   width: 230px;
+}
+
+/*=======Header-Infos======*/
+
+.infos {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.infos .news {
+  border: 1px solid var(--greydarkcolor);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--bluecolor);
+}
+
+.infos p {
+  margin-left: 25px;
+  font-size: 18px;
 }
