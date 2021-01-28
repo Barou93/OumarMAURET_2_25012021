@@ -1,0 +1,229 @@
+/*
+Charte graphique 
+  coleur princiaple bleu : #0065fc; 
+  coleur grise : #f2f2f2;
+
+*/
+
+/*=======GLOBAL STYLE======*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bluecolor: #0065fc;
+  --greycolor: #f2f2f2;
+  --greydarkcolor: #d9d9d9;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 25px;
+  padding: 25px;
+  max-width: 1440px;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 1335px;
+}
+
+/*=======HEADER========*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav .location {
+  color: var(--bluecolor);
+}
+
+.main-nav .location::after {
+  content: "";
+  border-top: 1px solid var(--bluecolor);
+  width: 165px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  right: 320px;
+}
+
+.main-nav .signin {
+  color: var(--bluecolor);
+  font-weight: bold;
+}
+
+/*=====Header paragraphe======*/
+
+.main-container {
+  position: relative;
+  top: 61px;
+}
+
+.main-container h1 {
+  font-size: 25px;
+}
+
+.main-container p {
+  margin-top: 25px;
+}
+
+/*=====Search Button========*/
+
+.search-container {
+  margin-top: 80px;
+}
+
+.btn-1 .gps {
+  background-color: var(--greycolor);
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.btn-1 .search {
+  margin-right: 5px;
+  width: 201px;
+  height: 45px;
+  border: 1px solid var(--greycolor);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+.search:focus {
+  outline: none; /*Permet d'enlever les bordures par défaut*/
+}
+
+.btn-2 {
+  position: relative;
+  bottom: 5px;
+  right: 30px;
+  width: 135px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: var(--bluecolor);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-2:focus {
+  outline: none;
+}
+
+/*=======Catégories filtre======*/
+
+.filter-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-container h1 {
+  font-size: 20px;
+}
+
+.filter-categories {
+  margin-left: 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+  width: 185px;
+  height: 50px;
+}
+
+.filter-categories:hover {
+  transition: 0.5s;
+  background: #deebff;
+  border: none;
+}
+.filter-categories .filter-icons {
+  background-color: #deebff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: var(--bluecolor);
+}
+
+.filter-categories .filter-details {
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.filter-details:hover {
+  color: var(--bluecolor);
+}
+
+.family {
+  width: 145px;
+}
+
+.animal {
+  width: 230px;
+}
+
+/*=======Header-Infos======*/
+
+.infos {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.infos .news {
+  border: 1px solid var(--greydarkcolor);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--bluecolor);
+}
+
+.infos p {
+  margin-left: 25px;
+  font-size: 18px;
+}
