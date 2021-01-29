@@ -250,10 +250,12 @@ main {
 .lodgement-container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-flow: wrap row;
 }
 
 .lodgements-cart {
+  margin-top: 25px;
   height: 210px;
   width: 245px;
   margin-left: 25px;
@@ -265,6 +267,7 @@ main {
 .lodgements-cart img {
   height: 115px;
   width: 230px;
+  object-fit: cover;
   margin: 8px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -283,7 +286,7 @@ main {
 .lodgements-details p {
   font-size: 15px;
   margin-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .price {
@@ -294,7 +297,7 @@ main {
   display: inline-block;
   position: relative;
   left: 15px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .full {
@@ -303,4 +306,16 @@ main {
 
 .simple {
   color: var(--greydarkcolor);
+}
+
+.other-page {
+  position: relative;
+  right: 325px;
+  top: 45px;
+}
+
+.other-page a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
