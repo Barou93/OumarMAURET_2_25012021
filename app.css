@@ -228,10 +228,12 @@ input::placeholder {
   font-size: 15px;
 }
 
-/*========Menu Principal======*/
+/*========Menu Principal Hébergements======*/
 
 main {
-  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .lodgement {
@@ -248,10 +250,8 @@ main {
   margin: 25px 25px 25px;
 }
 .lodgement-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-flow: wrap row;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .lodgements-cart {
@@ -318,4 +318,151 @@ main {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+}
+
+/*========ASIDE==============*/
+
+.aside {
+  width: 410px;
+  height: 665px;
+  background-color: var(--greycolor);
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+.aside-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.aside-title h1 {
+  font-size: 20px;
+}
+
+.aside-container {
+  width: 340px;
+  height: 145px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+.aside-cart img {
+  object-fit: cover;
+  width: 125px;
+  height: 135px;
+  margin: 5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.cart-details {
+  float: right;
+  margin-top: 20px;
+  margin-right: 35px;
+}
+
+.cart-details h3 {
+  font-size: 18px;
+}
+
+.cart-details p {
+  font-size: 15px;
+}
+
+.cart-star-icons {
+  margin-top: 35px;
+}
+
+.line-1 {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/*============Menu principal Activités=========*/
+.activity {
+  position: absolute;
+  top: 200%;
+}
+
+.activity-title {
+  margin-bottom: 25px;
+}
+
+.activity-contain {
+  display: flex;
+  align-items: center;
+  width: 1375px;
+  height: 475px;
+  background-color: #fff;
+}
+
+.activity-container {
+  margin-right: 25px;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(46, 45, 45, 0.575);
+}
+.activity img {
+  object-fit: cover;
+  height: 390px;
+  width: 295px;
+  margin-bottom: 25px;
+}
+
+.activity .small {
+  height: 240px;
+  width: 305px;
+  margin-bottom: 40px;
+}
+
+.activity .small img {
+  height: 175px;
+  width: 305px;
+}
+
+.activity-name {
+  text-align: justify;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  line-height: 7px;
+}
+
+.activity .small-light {
+  height: 165px;
+  width: 305px;
+}
+
+.activity .small-light img {
+  height: 115px;
+  width: 305px;
+}
+
+.activity .mini {
+  height: 185px;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.activity .mini img {
+  height: 140px;
+  width: 300px;
+}
+
+.activity .mini-light {
+  width: 310px;
+  height: 210px;
+}
+
+.activity .mini-light img {
+  width: 305px;
+  height: 155px;
+}
+
+.cart-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
