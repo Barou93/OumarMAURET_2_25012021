@@ -261,7 +261,7 @@ main {
   margin-left: 25px;
   background-color: #fff;
   border-radius: 25px;
-  /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
 }
 
 .lodgements-cart img {
@@ -346,6 +346,7 @@ main {
   width: 340px;
   height: 145px;
   background-color: #fff;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
   border-radius: 25px;
   margin-top: 35px;
 }
@@ -403,7 +404,7 @@ main {
 .activity-container {
   margin-right: 25px;
   border-radius: 10px;
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(46, 45, 45, 0.575);
+  box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
 }
 .activity img {
   object-fit: cover;
