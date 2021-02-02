@@ -22,12 +22,14 @@ Charte graphique
 
 html {
   font-family: "Raleway", sans-serif;
-  margin: 25px;
-  padding: 25px;
   max-width: 1440px;
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  margin: 25px;
+  padding: 25px;
   overflow-x: hidden;
   max-width: 1335px;
 }
@@ -234,6 +236,11 @@ main {
   display: flex;
   align-items: center;
   margin-top: 50px;
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
 }
 
 .lodgement {
@@ -468,5 +475,32 @@ main {
   align-items: center;
 }
 
+/**=======FOOTER==================*/
 
-/*
+footer {
+  position: absolute;
+  left: 0;
+  top: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 215px;
+  width: 100%;
+  background-color: var(--greycolor);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h1 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.footer-link {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #000;
+}
