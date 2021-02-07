@@ -26,15 +26,15 @@ html {
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  margin: 25px;
-  padding: 25px;
   overflow-x: hidden;
-  max-width: 1335px;
 }
 
 /*=======HEADER========*/
+
+header {
+  margin: 25px;
+  padding: 25px;
+}
 
 .navbar {
   display: flex;
@@ -116,9 +116,9 @@ body {
 }
 
 .btn-1 .search {
-  margin-right: 5px;
-  width: 201px;
-  height: 45px;
+  margin-right: 0px;
+  width: 235px;
+  height: 50px;
   border: 1px solid var(--greycolor);
   font-size: 18px;
   font-weight: bold;
@@ -233,19 +233,19 @@ input::placeholder {
 /*========Menu Principal Hébergements======*/
 
 main {
+  /*margin-top: 50px;*/
+  margin: 25px;
+  padding: 25px;
+}
+
+.group {
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
 }
 
 .lodgement {
   background-color: var(--greycolor);
-  width: 880px;
+  width: 875px;
   height: 665px;
   margin: 0;
   padding: 25px;
@@ -330,14 +330,13 @@ main {
 /*========ASIDE==============*/
 
 .aside {
-  width: 410px;
+  width: 450;
   height: 665px;
   background-color: var(--greycolor);
   border-radius: 10px;
   margin-left: 30px;
   padding: 20px;
 }
-
 .aside-title {
   display: flex;
   align-items: center;
@@ -392,8 +391,7 @@ main {
 
 /*============Menu principal Activités=========*/
 .activity {
-  position: absolute;
-  top: 200%;
+  margin-top: 70px;
 }
 
 .activity-title {
@@ -418,6 +416,7 @@ main {
   height: 390px;
   width: 295px;
   margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 .activity .small {
@@ -429,6 +428,7 @@ main {
 .activity .small img {
   height: 175px;
   width: 305px;
+  border-radius: 10px;
 }
 
 .activity-name {
@@ -446,6 +446,7 @@ main {
 .activity .small-light img {
   height: 115px;
   width: 305px;
+  border-radius: 10px;
 }
 
 .activity .mini {
@@ -457,6 +458,7 @@ main {
 .activity .mini img {
   height: 140px;
   width: 300px;
+  border-radius: 10px;
 }
 
 .activity .mini-light {
@@ -465,8 +467,9 @@ main {
 }
 
 .activity .mini-light img {
-  width: 305px;
+  width: 310px;
   height: 155px;
+  border-radius: 10px;
 }
 
 .cart-display {
@@ -478,36 +481,52 @@ main {
 /**=======FOOTER==================*/
 
 footer {
-  /* position: absolute;
-  left: 0;
-  top: 300%;
+  width: auto;
+  height: 215px;
+  background-color: var(--greycolor);
+}
+
+.footer-line {
   display: flex;
   align-items: center;
-  justify-content: space-around;*/
-  height: 215px;
-  width: 100%;
-  margin: 0;
-  background-color: var(--greycolor);
+  margin: 25px;
 }
 
 .footer-nav-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-left: 0;
 }
 .footer-description {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
+  margin-left: 25px;
 }
 
+.footer-description-loge {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
 footer h1 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .footer-link {
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #000;
 }
