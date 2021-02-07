@@ -249,7 +249,7 @@ main {
   height: 665px;
   margin: 0;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .lodgement h1 {
@@ -267,7 +267,7 @@ main {
   width: 245px;
   margin-left: 25px;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
 }
 
@@ -276,8 +276,8 @@ main {
   width: 230px;
   object-fit: cover;
   margin: 8px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .lodgements-details {
@@ -354,7 +354,7 @@ main {
   height: 145px;
   background-color: #fff;
   box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
-  border-radius: 25px;
+  border-radius: 15px;
   margin-top: 35px;
 }
 
@@ -478,20 +478,27 @@ main {
 /**=======FOOTER==================*/
 
 footer {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 300%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
   height: 215px;
   width: 100%;
+  margin: 0;
   background-color: var(--greycolor);
 }
 
-.footer-nav {
+.footer-nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.footer-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 footer h1 {
