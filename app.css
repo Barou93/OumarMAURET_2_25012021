@@ -22,12 +22,10 @@ Charte graphique
 
 html {
   font-family: "Raleway", sans-serif;
-  max-width: 1440px;
 }
 
 body {
   overflow-x: hidden;
-  max-width: 1335px;
 }
 
 /*=======HEADER========*/
