@@ -66,7 +66,7 @@ header {
   color: var(--bluecolor);
 }
 
-.main-nav .location::after {
+.main-nav .location::before {
   content: "";
   border-top: 1px solid var(--bluecolor);
   width: 165px;
@@ -340,7 +340,7 @@ main {
 /*========ASIDE==============*/
 
 .aside {
-  width: 450;
+  width: 450px;
   height: 665px;
   background-color: var(--greycolor);
   border-radius: 10px;
@@ -543,30 +543,24 @@ footer h1 {
 
 /*=============MEDIA QuERIES================*/
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
-  .main-container h1 {
-    display: none;
-  }
-
-  .main-container .min-h1 {
-    display: block;
-  }
-
+@media only screen and (min-width: 375px) and (max-width: 500px) {
   .btn-2 {
     display: none;
   }
 
-  header {
-    margin: 10px;
-    padding: 10px;
+  .main-container h1 {
+    font-size: 22px;
   }
+
+  header {
+    margin: 15px;
+    padding: 15px;
+  }
+
   .min-nav {
-    /*
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;*/
-    display: inline-block;
+    flex-direction: column;
   }
 
   .signin {
@@ -575,10 +569,11 @@ footer h1 {
 
   .logo {
     float: none;
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
+    margin: 20px;
     justify-content: space-between;
   }
 
@@ -590,34 +585,138 @@ footer h1 {
   }
 
   .main-nav {
+    float: none;
     display: flex;
-    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .main-nav li {
+    display: flex;
+    margin: 20px;
+  }
+
+  .main-nav .location::before {
+    display: none;
+  }
+
+  .main-nav .min-location::after {
+    position: absolute;
+    left: 0px;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--bluecolor);
+    padding: 8px;
+    margin: 0;
+    width: 200px;
+  }
+
+  .main-nav .activities::after {
+    position: absolute;
+    right: -20px;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--greydarkcolor);
+    width: 200px;
+    margin: 0;
+    padding: 8px;
   }
 
   .btn-2-min {
-    display: block;
-    background-color: var(--bluecolor);
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
     position: relative;
     bottom: 50px;
     left: 250px;
+    display: block;
+    background-color: var(--bluecolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+
     line-height: 50px;
     border: none;
     cursor: pointer;
   }
   .search-icons {
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
+  }
+  .filter-container {
+    display: block;
   }
 
-  .filter-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .filter-group-categories {
+  .filter-categories {
     display: inline-block;
+    margin-top: 20px;
+  }
+
+  .infos .news {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+  .infos p {
+    font-size: 12px;
+  }
+  .main {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .group {
+    display: flex;
+    flex-flow: wrap column-reverse;
+    margin: 0;
+  }
+
+  .lodgement {
+    background-color: #fff;
+  }
+  .aside {
+    position: relative;
+    right: 315px;
+    width: auto;
+  }
+
+  .lodgement h1 {
+    margin: 15px 0 25px -25px;
+  }
+
+  .lodgement-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: -105px;
+  }
+
+  .lodgements-cart {
+    height: 225px;
+    width: 325px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .lodgements-cart img {
+    width: 325px;
+    height: 125px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  /*
+  .other-page {
+    margin-top: 25px;
+  }*/
+
+  .activity-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 340px;
+    height: 190px;
+    margin-bottom: 25px;
+  }
+
+  .activity-min img {
+    width: 340px;
+    height: 135px;
   }
 }
