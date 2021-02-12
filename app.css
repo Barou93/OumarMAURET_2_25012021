@@ -22,7 +22,6 @@ Charte graphique
 
 html {
   font-family: "Raleway", sans-serif;
-  max-width: 1440px;
 }
 
 body {
@@ -67,7 +66,7 @@ header {
   color: var(--bluecolor);
 }
 
-.main-nav .location::after {
+.main-nav .location::before {
   content: "";
   border-top: 1px solid var(--bluecolor);
   width: 165px;
@@ -82,6 +81,10 @@ header {
   font-weight: bold;
 }
 
+.min-signup {
+  display: none;
+}
+
 /*=====Header paragraphe======*/
 
 .main-container {
@@ -91,6 +94,9 @@ header {
 
 .main-container h1 {
   font-size: 25px;
+}
+.main-container .min-h1 {
+  display: none;
 }
 
 .main-container p {
@@ -116,6 +122,8 @@ header {
 }
 
 .btn-1 .search {
+  position: relative;
+  right: 5px;
   margin-right: 0px;
   width: 235px;
   height: 50px;
@@ -125,6 +133,8 @@ header {
 }
 
 input::placeholder {
+  position: relative;
+  left: 10px;
   color: #000;
 }
 
@@ -133,9 +143,7 @@ input::placeholder {
 }
 
 .btn-2 {
-  position: relative;
-  bottom: 5px;
-  right: 30px;
+  margin-left: -10px;
   width: 135px;
   height: 50px;
   font-size: 18px;
@@ -153,6 +161,10 @@ input::placeholder {
   outline: none;
 }
 
+.btn-2-min {
+  display: none;
+}
+
 /*=======Catégories filtre======*/
 
 .filter-container {
@@ -163,6 +175,10 @@ input::placeholder {
 
 .filter-container h1 {
   font-size: 20px;
+}
+
+.filter-mini {
+  display: flex;
 }
 
 .filter-categories {
@@ -240,7 +256,9 @@ main {
 
 .group {
   display: flex;
-  align-items: center;
+  align-content: center;
+  justify-content: stretch;
+  margin-left: -20px;
 }
 
 .lodgement {
@@ -259,6 +277,8 @@ main {
 .lodgement-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  margin-left: 0;
+  margin-right: 25px;
 }
 
 .lodgements-cart {
@@ -330,7 +350,7 @@ main {
 /*========ASIDE==============*/
 
 .aside {
-  width: 450;
+  width: 450px;
   height: 665px;
   background-color: var(--greycolor);
   border-radius: 10px;
@@ -355,6 +375,7 @@ main {
   box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
   border-radius: 15px;
   margin-top: 35px;
+  margin-left: -5px;
 }
 
 .aside-cart img {
@@ -401,13 +422,15 @@ main {
 .activity-contain {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 1375px;
   height: 475px;
   background-color: #fff;
+  margin-left: -60px;
 }
 
 .activity-container {
-  margin-right: 25px;
+  /*margin-right: 25px;*/
   border-radius: 10px;
   box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
 }
@@ -529,4 +552,249 @@ footer h1 {
   text-decoration: none;
   margin-bottom: 12px;
   color: #000;
+}
+
+/*=============MEDIA QuERIES================*/
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+  .btn-2 {
+    display: none;
+  }
+
+  .main-container h1 {
+    font-size: 22px;
+  }
+
+  header {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .min-nav {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .signin {
+    display: none;
+  }
+
+  .logo {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+  }
+
+  .min-signup {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bluecolor);
+    font-weight: bold;
+  }
+
+  .main-nav {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .main-nav li {
+    display: flex;
+    margin: 20px;
+  }
+
+  .main-nav .location::before {
+    display: none;
+  }
+
+  .main-nav .min-location::after {
+    margin-left: -50px !important;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--bluecolor);
+    padding: 8px;
+    margin: 0;
+    width: 200px;
+  }
+
+  .main-nav .activities::after {
+    margin-left: -40px !important;
+    margin-top: 0px !important;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--greydarkcolor);
+    width: 200px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .btn-2-min {
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+    display: block;
+    background-color: var(--bluecolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-icons {
+    color: #fff;
+    font-size: 15px;
+  }
+  .filter-container {
+    display: inline-block;
+  }
+
+  .filter-mini {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-categories {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .eco {
+    width: 160px;
+  }
+
+  .family {
+    margin-left: 10px;
+  }
+
+  .filter-details {
+    font-size: 13px;
+  }
+
+  .infos .news {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+  .infos p {
+    font-size: 12px;
+  }
+  .main {
+    margin: 20px;
+  }
+
+  .group {
+    display: flex;
+    flex-flow: wrap column-reverse;
+    margin: 0;
+  }
+
+  .lodgement {
+    height: auto;
+    background-color: #fff;
+  }
+  .aside {
+    position: relative;
+    right: 315px;
+    width: auto;
+  }
+
+  .lodgement h1 {
+    margin-left: -50px;
+  }
+
+  .lodgement-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: -95px;
+  }
+
+  .lodgements-cart {
+    height: 225px;
+    width: 325px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .lodgements-cart img {
+    width: 325px;
+    height: 125px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .other-page {
+    text-align: center;
+    margin-right: 75px;
+  }
+
+  .activity {
+    height: auto;
+  }
+  .activity-container {
+    margin-right: 50px;
+  }
+
+  .activity .activity-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 335px;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .activity-title h1 {
+    margin-left: -35px;
+  }
+
+  .activity .activity-min img {
+    width: 335px;
+    height: 135px;
+  }
+
+  .cart-display {
+    display: flex;
+    align-items: stretch;
+  }
+
+  footer {
+    height: auto;
+    /*display: flex;
+    flex-direction: column;*/
+  }
+
+  .footer-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .footer-nav-container {
+    margin: 0;
+    display: block;
+  }
+
+  .footer-description {
+    margin-left: 25px;
+  }
+  .footer-description-loge {
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
 }
