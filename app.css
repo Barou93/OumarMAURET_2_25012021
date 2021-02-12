@@ -601,8 +601,7 @@ footer h1 {
   }
 
   .main-nav .min-location::after {
-    position: absolute;
-    left: 0px;
+    margin-left: -50px !important;
     content: "";
     display: block;
     border-bottom: 2px solid var(--bluecolor);
@@ -612,8 +611,8 @@ footer h1 {
   }
 
   .main-nav .activities::after {
-    position: absolute;
-    right: -20px;
+    margin-left: -40px !important;
+    margin-top: 0px !important;
     content: "";
     display: block;
     border-bottom: 2px solid var(--greydarkcolor);
@@ -631,7 +630,6 @@ footer h1 {
     height: 50px;
     width: 50px;
     border-radius: 10px;
-
     line-height: 50px;
     border: none;
     cursor: pointer;
@@ -641,12 +639,30 @@ footer h1 {
     font-size: 15px;
   }
   .filter-container {
-    display: block;
+    display: inline-block;
+  }
+
+  .filter-mini {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .filter-categories {
-    display: inline-block;
+    display: block;
     margin-top: 20px;
+    margin-left: 0;
+  }
+  .eco {
+    width: 160px;
+  }
+
+  .family {
+    margin-left: 10px;
+  }
+
+  .filter-details {
+    font-size: 13px;
   }
 
   .infos .news {
@@ -670,6 +686,7 @@ footer h1 {
   }
 
   .lodgement {
+    height: auto;
     background-color: #fff;
   }
   .aside {
@@ -679,13 +696,13 @@ footer h1 {
   }
 
   .lodgement h1 {
-    margin: 15px 0 25px -25px;
+    margin-left: -50px;
   }
 
   .lodgement-container {
     display: flex;
     flex-flow: column wrap;
-    margin-left: -105px;
+    margin-left: -95px;
   }
 
   .lodgements-cart {
@@ -701,22 +718,56 @@ footer h1 {
     margin-top: 0;
     margin-left: 0;
   }
-  /*
-  .other-page {
-    margin-top: 25px;
-  }*/
 
-  .activity-min {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 340px;
-    height: 190px;
-    margin-bottom: 25px;
+  .other-page {
+    text-align: center;
+    margin-right: 75px;
   }
 
-  .activity-min img {
+  .activity {
+    height: auto;
+  }
+  .activity-container {
+    margin-right: 50px;
+  }
+
+  .activity .activity-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 340px;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .activity-title h1 {
+    margin-left: -35px;
+  }
+
+  .activity .activity-min img {
     width: 340px;
     height: 135px;
   }
+
+  .cart-display {
+    display: flex;
+    align-items: stretch;
+  }
+  /**
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-line {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .footer-nav-container {
+    margin: 0;
+  }*/
 }
