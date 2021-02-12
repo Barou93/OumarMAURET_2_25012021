@@ -175,6 +175,10 @@ input::placeholder {
   font-size: 20px;
 }
 
+.filter-mini {
+  display: flex;
+}
+
 .filter-categories {
   margin-left: 25px;
   border: 1px solid #d9d9d9;
@@ -675,8 +679,7 @@ footer h1 {
     font-size: 12px;
   }
   .main {
-    margin: 25px;
-    padding: 25px;
+    margin: 20px;
   }
 
   .group {
@@ -735,7 +738,7 @@ footer h1 {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    width: 340px;
+    width: 335px;
     height: auto;
     margin-top: 25px;
     margin-right: 50px;
@@ -747,7 +750,7 @@ footer h1 {
   }
 
   .activity .activity-min img {
-    width: 340px;
+    width: 335px;
     height: 135px;
   }
 
@@ -765,9 +768,24 @@ footer h1 {
   .footer-line {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0;
   }
   .footer-nav-container {
     margin: 0;
+    display: block;
+  }
+
+  .footer-description {
+    margin-left: 25px;
+  }
+  .footer-description-loge {
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
   }
 }
