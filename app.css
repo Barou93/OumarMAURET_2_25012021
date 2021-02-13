@@ -250,7 +250,8 @@ input::placeholder {
 
 main {
   /*margin-top: 50px;*/
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 25px;
 }
 
@@ -258,7 +259,7 @@ main {
   display: flex;
   align-content: center;
   justify-content: stretch;
-  margin-left: -20px;
+  margin-left: -15px;
 }
 
 .lodgement {
