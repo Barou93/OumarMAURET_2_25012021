@@ -692,6 +692,7 @@ footer h1 {
 
   .group {
     display: flex;
+    align-content: flex-start;
     flex-flow: wrap column-reverse;
     margin: 0;
   }
@@ -701,9 +702,16 @@ footer h1 {
     background-color: #fff;
   }
   .aside {
-    position: relative;
-    right: 315px;
+    margin-left: -45px;
     width: auto;
+  }
+
+  .aside-container {
+    margin-left: 5px;
+  }
+
+  .line-1 {
+    margin-left: 100px;
   }
 
   .lodgement h1 {
@@ -732,7 +740,7 @@ footer h1 {
 
   .other-page {
     text-align: center;
-    margin-right: 75px;
+    margin-right: 50px;
   }
 
   .activity {
@@ -750,6 +758,7 @@ footer h1 {
     height: auto;
     margin-top: 25px;
     margin-right: 50px;
+    margin-left: 0;
     margin-bottom: 0;
   }
 
