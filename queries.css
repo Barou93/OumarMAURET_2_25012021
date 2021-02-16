@@ -1,0 +1,271 @@
+/*=============MEDIA QuERIES================*/
+
+@media only screen and (max-width: 1100px) {
+  .lodgement {
+    width: auto;
+    height: auto;
+  }
+  .lodgement-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35px;
+  }
+
+  .other-page {
+    position: relative;
+    right: 0;
+    margin-left: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .btn-2 {
+    display: none;
+  }
+
+  .main-container h1 {
+    font-size: 22px;
+  }
+
+  header {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .min-nav {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .signin {
+    display: none;
+  }
+
+  .logo {
+    float: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .min-signup {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bluecolor);
+    font-weight: bold;
+  }
+
+  .main-nav {
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .main-nav li {
+    display: flex;
+    margin: 20px;
+  }
+
+  .main-nav .location::before {
+    display: none;
+  }
+
+  .main-nav .min-location::after {
+    margin-left: -50px !important;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--bluecolor);
+    padding: 8px;
+    margin: 0;
+    width: 200px;
+  }
+
+  .main-nav .activities::after {
+    margin-left: -40px !important;
+    margin-top: 0px !important;
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--greydarkcolor);
+    width: 200px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .btn-2-min {
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+    display: block;
+    background-color: var(--bluecolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-icons {
+    color: #fff;
+    font-size: 15px;
+  }
+  .filter-container {
+    display: inline-block;
+  }
+
+  .filter-mini {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-categories {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .eco {
+    width: 160px;
+  }
+
+  .family {
+    margin-left: 10px;
+  }
+
+  .filter-details {
+    font-size: 13px;
+  }
+
+  .infos .news {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+  .infos p {
+    font-size: 12px;
+  }
+  .main {
+    margin: 20px;
+  }
+
+  .group {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: wrap column-reverse;
+    margin: 0;
+  }
+
+  .lodgement {
+    height: auto;
+    background-color: #fff;
+  }
+  .aside {
+    margin-left: -55px;
+    width: auto;
+  }
+
+  .aside-container {
+    margin-left: 5px;
+  }
+
+  .line-1 {
+    margin-left: 100px;
+  }
+
+  .lodgement h1 {
+    margin-left: -50px;
+  }
+
+  .lodgement-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: -95px;
+  }
+
+  .lodgements-cart {
+    height: 225px;
+    width: 325px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .lodgements-cart img {
+    width: 325px;
+    height: 125px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .other-page {
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .activity {
+    height: auto;
+  }
+  .activity-container {
+    margin-right: 50px;
+  }
+
+  .activity .activity-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 335px;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .activity-title h1 {
+    margin-left: -35px;
+  }
+
+  .activity .activity-min img {
+    width: 335px;
+    height: 135px;
+  }
+
+  .cart-display {
+    display: flex;
+    align-items: stretch;
+  }
+
+  footer {
+    height: auto;
+    /*display: flex;
+      flex-direction: column;*/
+  }
+
+  .footer-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .footer-nav-container {
+    margin: 0;
+    display: block;
+  }
+
+  .footer-description {
+    margin-left: 25px;
+  }
+  .footer-description-loge {
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+}
