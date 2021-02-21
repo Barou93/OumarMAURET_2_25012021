@@ -14,6 +14,11 @@ Charte graphique
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 :root {
   --bluecolor: #0065fc;
   --greycolor: #f2f2f2;
@@ -248,23 +253,22 @@ input::placeholder {
 
 main {
   /*margin-top: 50px;*/
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 0 auto;
   padding: 25px;
 }
 
 .group {
   display: flex;
-  align-content: center;
-  justify-content: stretch;
-  margin-left: -15px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .lodgement {
   background-color: var(--greycolor);
-  width: 875px;
-  height: 665px;
-  margin: 0;
+  flex: 100%;
+  height: auto;
+  margin: 0 auto;
   padding: 25px;
   border-radius: 15px;
 }
@@ -274,16 +278,18 @@ main {
   margin: 25px 25px 25px;
 }
 .lodgement-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  flex: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-left: 0;
   margin-right: 25px;
 }
 
 .lodgements-cart {
+  flex: 30%;
   margin-top: 25px;
   height: 210px;
-  width: 245px;
   margin-left: 25px;
   background-color: #fff;
   border-radius: 15px;
@@ -292,9 +298,9 @@ main {
 
 .lodgements-cart img {
   height: 115px;
-  width: 230px;
+  width: 100%;
   object-fit: cover;
-  margin: 8px;
+  margin: 0 auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -306,7 +312,7 @@ main {
 .lodgements-details h3 {
   font-size: 15px;
   margin-left: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .lodgements-details p {
@@ -335,9 +341,9 @@ main {
 }
 
 .other-page {
-  position: relative;
-  right: 325px;
-  top: 45px;
+  flex: 1;
+  margin-left: 25px;
+  margin-top: 50px;
 }
 
 .other-page a {
@@ -349,7 +355,7 @@ main {
 /*========ASIDE==============*/
 
 .aside {
-  width: 450px;
+  flex: 20%;
   height: 665px;
   background-color: var(--greycolor);
   border-radius: 10px;
@@ -421,24 +427,34 @@ main {
 .activity-contain {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 1375px;
+  justify-content: space-between;
+  flex: 25%;
   height: 475px;
   background-color: #fff;
-  margin-left: -60px;
+  margin: 0 auto;
 }
 
-.activity-container {
-  /*margin-right: 25px;*/
+.activity-cart {
   border-radius: 10px;
   box-shadow: 1.5px 1.5px 1.5px 1.5px var(--greydarkcolor);
+  background-color: #fff;
 }
 .activity img {
   object-fit: cover;
-  height: 390px;
+  height: 350px;
   width: 295px;
   margin-bottom: 25px;
   border-radius: 10px;
+}
+
+.first-cart {
+  flex: 1;
+  width: 23%;
+}
+
+.second-cart {
+  flex: 1;
+  width: 23%;
 }
 
 .activity .small {
@@ -498,6 +514,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  width: 23%;
+}
+
+.cart-display-2 {
+  flex: 1;
+  width: 23%;
 }
 
 /**=======FOOTER==================*/
@@ -516,19 +539,19 @@ footer {
 .footer-nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-left: 50px;
 }
 .footer-description {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-left: 25px;
 }
 
 .footer-description-loge {
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
+  margin-left: 250px;
   margin-bottom: 40px;
 }
 
@@ -536,7 +559,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  margin-left: 250px;
+  margin-left: 300px;
   margin-bottom: 40px;
 }
 footer h1 {
