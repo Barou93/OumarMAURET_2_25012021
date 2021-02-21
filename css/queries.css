@@ -254,13 +254,30 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .group {
+  /*.group {
     display: flex;
     justify-content: stretch;
-    align-items: flex-end;
+    align-items: flex-start;
   }
-
+*/
   .lodgement-container {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .group {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .aside {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .aside-container {
+    width: 100%;
+  }
+  .cart-details {
+    margin-right: 70%;
   }
 }
