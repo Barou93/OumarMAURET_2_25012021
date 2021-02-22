@@ -1,6 +1,6 @@
 /*=============MEDIA QuERIES================*/
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .btn-2 {
     display: none;
   }
@@ -253,6 +253,22 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  .group {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: normal;
+  }
+  .aside {
+    margin-bottom: 50px;
+  }
+  .aside-container {
+    width: 100%;
+  }
+  .cart-details {
+    margin-right: 70%;
+  }
+}
 @media screen and (min-width: 1024px) {
   /*.group {
     display: flex;
@@ -262,22 +278,5 @@
 */
   .lodgement-container {
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .group {
-    display: flex;
-    flex-direction: column-reverse !important;
-  }
-  .aside {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .aside-container {
-    width: 100%;
-  }
-  .cart-details {
-    margin-right: 70%;
   }
 }
