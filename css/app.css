@@ -8,7 +8,18 @@ Charte graphique
 /*=======GLOBAL STYLE======*/
 *,
 *::before,
-*::after {
+*::after,
+ul,
+li,
+nav,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,6 +28,10 @@ Charte graphique
 a {
   text-decoration: none;
   color: #000;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 :root {
@@ -171,13 +186,14 @@ input::placeholder {
 /*=======Catégories filtre======*/
 
 .filter-container {
-  margin-top: 30px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
 }
 
 .filter-container h1 {
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .filter-mini {
@@ -188,7 +204,7 @@ input::placeholder {
   margin-left: 25px;
   border: 1px solid #d9d9d9;
   border-radius: 30px;
-  width: 185px;
+  width: 160px;
   height: 50px;
 }
 
@@ -212,6 +228,7 @@ input::placeholder {
   color: #000;
   margin-left: 10px;
   font-weight: bold;
+  font-size: 0.68em;
 }
 
 .filter-details:hover {
@@ -223,7 +240,7 @@ input::placeholder {
 }
 
 .animal {
-  width: 230px;
+  width: 200px;
 }
 
 /*=======Header-Infos======*/
@@ -357,7 +374,7 @@ main {
 
 .aside {
   flex: 20%;
-  height: 665px;
+  height: 620px;
   background-color: var(--greycolor);
   border-radius: 10px;
   margin-left: 30px;
@@ -372,6 +389,12 @@ main {
 
 .aside-title h1 {
   font-size: 20px;
+}
+
+.aside-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aside-container {
