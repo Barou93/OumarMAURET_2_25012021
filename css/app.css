@@ -228,7 +228,7 @@ input::placeholder {
   color: #000;
   margin-left: 10px;
   font-weight: bold;
-  font-size: 0.68em;
+  font-size: 0.68 em;
 }
 
 .filter-details:hover {
@@ -391,7 +391,7 @@ main {
   font-size: 20px;
 }
 
-.aside-contain {
+/* .aside-contain {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -414,7 +414,7 @@ main {
   margin: 5px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-}
+} */
 
 .cart-details {
   float: right;
