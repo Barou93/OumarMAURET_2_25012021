@@ -90,6 +90,7 @@
     border: none;
     cursor: pointer;
   }
+
   .search-icons {
     color: #fff;
     font-size: 15px;
@@ -141,7 +142,7 @@
 
   .lodgement-container {
     width: 150% !important;
-    margin-left: -60px !important;
+    margin-left: -70px !important;
   }
 
   .aside {
@@ -164,6 +165,19 @@
     position: relative;
     right: 60px;
     bottom: 20px;
+  }
+
+  .main .activites__list .activites__group {
+    width: 125% !important;
+    margin-left: -35px;
+  }
+
+  .cart-details {
+    margin-right: 35% !important;
+  }
+
+  .cart-details h3 p {
+    font-size: 12px;
   }
 
   /*
@@ -272,7 +286,7 @@
 }
 
 @media screen and (min-width: 921px) and (max-width: 1150px) {
-  .group {
+  /*.group {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -317,7 +331,7 @@
   .cart-star-icons {
     margin-bottom: 0;
     margin-top: 10px;
-  }
+  }*/
 }
 
 @media screen and (max-width: 920px) {
@@ -515,6 +529,39 @@
     padding: 15px;
   }
 
+  .btn-2 {
+    display: none;
+  }
+
+  .btn-2-min {
+    position: relative;
+    bottom: 50px;
+    left: 80%;
+    display: block;
+    background-color: var(--bluecolor);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-icons {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .btn-1 .search {
+    position: relative;
+    right: 5px;
+    margin-right: 0px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid var(--greycolor);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   .min-nav {
     display: block;
     align-items: center;
@@ -581,21 +628,18 @@
   .lodgement {
     background-color: #fff;
   }
-
-  .aside-container {
-    flex: 0;
-    width: 65vw;
+  .aside {
+    width: 100vw;
+    margin-left: -30px;
   }
 
-  .aside-container img {
-    width: 98%;
-    height: 175px;
+  .aside-container {
+    width: 100%;
   }
 
   .cart-details {
     font-size: 0.8em;
-    width: 40%;
-    margin-left: 40px;
+    width: 20%;
   }
 
   .cart-details h3 {
@@ -613,24 +657,6 @@
 @media screen and (max-width: 495px) {
   .btn-2 {
     display: none;
-  }
-
-  .btn-2-min {
-    position: relative;
-    bottom: 50px;
-    left: 250px;
-    display: block;
-    background-color: var(--bluecolor);
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    line-height: 50px;
-    border: none;
-    cursor: pointer;
-  }
-  .search-icons {
-    color: #fff;
-    font-size: 15px;
   }
 
   .main-nav .min-location::after {
@@ -656,5 +682,11 @@
   .lodgement-container {
     width: 120%;
     margin-left: -45px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .cart-details {
+    margin-right: 275px;
   }
 }
