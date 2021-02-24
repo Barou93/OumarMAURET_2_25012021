@@ -690,3 +690,15 @@
     margin-right: 275px;
   }
 }
+
+@media screen and (max-width: 555px) {
+  .cart-details {
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .cart-details {
+    margin-right: 20%;
+  }
+}
