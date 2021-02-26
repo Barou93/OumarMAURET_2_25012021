@@ -425,11 +425,16 @@ main {
 
 .cart-details {
   /* display: flex;
-  flex-direction: column; */
+  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  /* float: right; */
+  margin-top: -125px;
+  margin-left: 120px;
 
-  float: right;
+  /* float: right;
   margin-top: 20px;
-  margin-right: 35px;
+  margin-right: 35px; */
 }
 
 .cart-details h3 {

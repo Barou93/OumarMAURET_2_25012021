@@ -1,290 +1,5 @@
 /*=============MEDIA QuERIES================*/
 
-/* @media screen and (max-width: 375px) {
-  .btn-2 {
-    display: none;
-  }
-
-  .main-container h1 {
-    font-size: 22px;
-  }
-
-  header {
-    margin: 15px;
-    padding: 15px;
-  }
-
-  .min-nav {
-    display: block;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .signin {
-    display: none;
-  }
-
-  .logo {
-    float: none;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .min-signup {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--bluecolor);
-    font-weight: bold;
-  }
-
-  .main-nav {
-    float: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  .main-nav li {
-    display: flex;
-    margin: 20px;
-  }
-
-  .main-nav .location::before {
-    display: none;
-  }
-
-  .main-nav .min-location::after {
-    margin-left: -50px !important;
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--bluecolor);
-    padding: 8px;
-    margin: 0;
-    width: 200px;
-  }
-
-  .main-nav .activities::after {
-    margin-left: -40px !important;
-    margin-top: 0px !important;
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--greydarkcolor);
-    width: 200px;
-    margin: 0;
-    padding: 8px;
-  }
-
-  .btn-2-min {
-    position: relative;
-    bottom: 50px;
-    left: 250px;
-    display: block;
-    background-color: var(--bluecolor);
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    line-height: 50px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .search-icons {
-    color: #fff;
-    font-size: 15px;
-  }
-  .filter-container {
-    display: inline-block;
-  }
-
-  .filter-mini {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .filter-categories {
-    display: block;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .eco {
-    width: 160px;
-  }
-
-  .family {
-    margin-left: 10px;
-  }
-
-  .filter-details {
-    font-size: 13px;
-  }
-
-  .infos .news {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 10px;
-  }
-  .infos p {
-    font-size: 12px;
-  }
-  .main {
-    margin: 20px;
-  }
-
-  .lodgement h2 {
-    font-size: 20px;
-    margin-left: -40px;
-  }
-
-  .lodgement-container {
-    width: 150% !important;
-    margin-left: -70px !important;
-  }
-
-  .aside {
-    width: 100vw;
-    margin-left: -50px !important;
-  }
-
-  .aside-container {
-    width: 85vw;
-  }
-
-  .aside-container img {
-    height: 45vw;
-    border-bottom-left-radius: none;
-    border-top-right-radius: 10px;
-  }
-
-  .other-page a {
-    font-size: 15px;
-    position: relative;
-    right: 60px;
-    bottom: 20px;
-  }
-
-  .main .activites__list .activites__group {
-    width: 125% !important;
-    margin-left: -35px;
-  }
-
-  .cart-details {
-    margin-right: 35% !important;
-  }
-
-  .cart-details h3 p {
-    font-size: 12px;
-  } */
-
-/*
-  .group {
-    display: flex;
-    align-content: flex-start;
-    flex-flow: wrap column-reverse;
-    margin: 0 auto;
-  }
-
-  .lodgement {
-    height: auto;
-    background-color: #fff;
-    margin: 0 auto;
-  }
-  .aside {
-    margin-left: -55px;
-    width: 150%;
-  }
-
-  .aside-container {
-    margin-left: 5px;
-  }
-
-  .aside-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .lodgement h1 {
-    margin-left: -50px;
-  }
-
-  .lodgement-container {
-    display: flex;
-    flex-flow: column wrap;
-    margin-left: -95px !important;
-  }
-
-  .lodgements-cart {
-    height: 225px;
-    width: 100%;
-    margin: 0 auto;
-    /* margin-left: 50px;
-    margin-right: 20px; 
-  }
-
-  .lodgements-cart img {
-    width: 325px;
-    height: 125px;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .other-page {
-    text-align: center;
-    margin-right: 50px;
-  }
-
-  .main .activites__list .activites__group {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 0;
-    align-items: center;
-    height: 73rem;
-  }
-
-  .main .activites__list .activites__group .activite {
-    flex-basis: 12rem !important;
-    width: 90%;
-    margin-top: 15px;
-  }
-
-  footer {
-    height: auto;
-    /*display: flex;
-      flex-direction: column;
-  }
-*/
-/* .footer-line {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
-  .footer-nav-container {
-    margin: 0;
-    display: block;
-  }
-
-  .footer-description {
-    margin-left: 25px;
-  }
-  .footer-description-loge {
-    margin-left: 25px;
-    margin-bottom: 0;
-  }
-  .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 25px;
-  }
-} */
-
 @media screen and (min-width: 1024px) {
   .lodgements-details h3 {
     font-size: 13px;
@@ -375,6 +90,10 @@
     flex-direction: column-reverse !important;
     align-items: normal;
   }
+  .lodgement {
+    background-color: #fff;
+  }
+
   .aside {
     width: 100vw;
     margin-bottom: 50px;
@@ -384,17 +103,10 @@
   .aside-container {
     width: 100%;
   }
-  .cart-details {
-    /*margin-right: 85%;*/
-    width: 80%;
-  }
 
-  /* .main .activites__list .activites__group .activite1,
-  .main .activites__list .activites__group .activite4 {
-    width: 35%;
-    display: flex;
-    flex-direction: column !important;
-  } */
+  .cart-details {
+    margin-left: 140px;
+  }
 
   .footer-description-loge {
     margin-left: 50px;
@@ -407,173 +119,6 @@
     margin-left: 50px;
   }
 }
-
-/* @media screen and (max-width: 675px) {
-  .aside-container {
-    width: 100%;
-  }
-  .cart-details {
-    margin-right: 55%;
-  }
-
-  .filter-container {
-    display: inline-block;
-  }
-
-  .filter-mini {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .filter-categories {
-    display: block;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .eco {
-    width: 160px;
-  }
-
-  .family {
-    margin-left: 10px;
-  }
-
-  .filter-details {
-    font-size: 13px;
-  }
-
-  .infos .news {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 10px;
-  }
-  .infos p {
-    font-size: 12px;
-  }
-
-  footer {
-    height: auto;
-    display: flex;
-      flex-direction: column;
-  }
-
-  .footer-line {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
-  .footer-nav-container {
-    margin: 0;
-    display: block;
-  }
-
-  .footer-description {
-    margin-left: 25px;
-  }
-  .footer-description-loge {
-    margin-left: 25px;
-    margin-bottom: 0;
-  }
-  .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 25px;
-  }
-} */
-
-/* @media screen and (max-width: 764px) {
-  .filter-container {
-    display: inline-block;
-  }
-
-  .filter-mini {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .filter-categories {
-    display: block;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .eco {
-    width: 160px;
-  }
-
-  .family {
-    margin-left: 10px;
-  }
-
-  .filter-details {
-    font-size: 13px;
-  }
-
-  .infos .news {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 10px;
-  }
-  .infos p {
-    font-size: 12px;
-  }
-
-  .lodgement-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .lodgements-cart {
-    flex: 0;
-    flex-direction: column;
-  }
-
-  .main .activites__list .activites__group {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 0;
-    align-items: center;
-    height: 73rem;
-  }
-
-  .main .activites__list .activites__group .activite {
-    flex-basis: 12rem !important;
-    width: 90%;
-    margin-top: 15px;
-  }
-
- 
-
-  .footer-line {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
-  .footer-nav-container {
-    margin: 0;
-    display: block;
-  }
-
-  .footer-description {
-    margin-left: 25px;
-  }
-  .footer-description-loge {
-    margin-left: 25px;
-    margin-bottom: 0;
-  }
-  .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 25px;
-  }
-} */
 
 @media screen and (max-width: 764px) {
   header {
@@ -719,6 +264,10 @@
     flex-direction: column-reverse !important;
     align-items: normal;
   }
+
+  .star-icons {
+    margin-bottom: 20px;
+  }
   .aside {
     width: 100vw;
     margin-bottom: 50px;
@@ -727,10 +276,11 @@
   }
   .aside-container {
     width: 90%;
+    margin-left: -15px;
   }
-  .cart-details {
+  /* .cart-details {
     margin-right: 60%;
-  }
+  } */
 
   .lodgement {
     background-color: #fff;
@@ -744,24 +294,16 @@
   .lodgements-cart {
     flex: 0;
     flex-direction: column;
+    /*margin-left: 32px;*/
   }
-
-  /* .aside {
-    width: 100vw;
-    margin-left: -30px;
-  }
-
-  .aside-container {
-    width: 100%;
-  } */
 
   .cart-details {
     font-size: 0.8em;
-    width: 20%;
+    margin-left: 150px;
   }
 
   .cart-details h3 {
-    font-size: 1em;
+    font-size: 15px;
   }
 
   .cart-details p {
@@ -783,7 +325,7 @@
 
   .main .activites__list .activites__group .activite {
     flex-basis: 12rem !important;
-    width: 90%;
+    width: 100%;
     margin-top: 15px;
   }
 
@@ -815,7 +357,7 @@
     margin-left: 25px;
   }
 }
-/* 
+
 @media screen and (max-width: 495px) {
   .btn-2 {
     display: none;
@@ -846,24 +388,6 @@
     margin-left: -45px;
   }
 }
-
-@media screen and (max-width: 648px) {
-  .cart-details {
-    margin-right: 275px;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  .cart-details {
-    margin-right: 200px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .cart-details {
-    margin-right: 20%;
-  }
-} */
 
 @media screen and (max-width: 375px) {
   .filter-container {
@@ -912,8 +436,17 @@
   }
 
   .lodgement-container {
-    width: 150% !important;
-    margin-left: -70px !important;
+    width: 165% !important;
+    margin-left: -80px !important;
+  }
+
+  .other-page {
+    margin-left: 0;
+  }
+
+  .title {
+    margin-left: -40px;
+    font-size: 25px;
   }
 
   .aside {
@@ -926,7 +459,7 @@
   }
 
   .aside-container img {
-    height: 45vw;
+    height: 140px;
     border-bottom-left-radius: none;
     border-top-right-radius: 10px;
   }
@@ -942,9 +475,8 @@
     width: 125% !important;
     margin-left: -35px;
   }
-
   .cart-details {
-    margin-right: 35% !important;
+    margin-top: -150px;
   }
 
   .cart-details h3 p {
