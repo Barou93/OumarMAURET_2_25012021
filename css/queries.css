@@ -33,7 +33,7 @@
   }
 
   .cart-details h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   .cart-details p {
@@ -386,6 +386,24 @@
   .lodgement-container {
     width: 120%;
     margin-left: -45px;
+  }
+}
+
+@media screen and (max-with: 400px) {
+  .aside {
+    width: 100vw;
+    margin-left: -50px !important;
+  }
+
+  .aside-container {
+    min-width: 400px;
+    margin: 0 auto;
+  }
+
+  .aside-container img {
+    height: 140px;
+    border-bottom-left-radius: none;
+    border-top-right-radius: 10px;
   }
 }
 
