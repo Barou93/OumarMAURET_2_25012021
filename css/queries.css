@@ -389,21 +389,10 @@
   }
 }
 
-@media screen and (max-with: 400px) {
-  .aside {
-    width: 100vw;
-    margin-left: -50px !important;
-  }
-
+@media screen and (max-width: 400px) {
   .aside-container {
     min-width: 400px;
-    margin: 0 auto;
-  }
-
-  .aside-container img {
-    height: 140px;
-    border-bottom-left-radius: none;
-    border-top-right-radius: 10px;
+    /*padding: 10px;*/
   }
 }
 
