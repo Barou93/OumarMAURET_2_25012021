@@ -419,8 +419,8 @@ main {
   width: 125px;
   height: 135px;
   margin: 5px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .cart-details {
