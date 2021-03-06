@@ -509,3 +509,13 @@
     margin-top: 53px;
   }
 }
+
+/*.main-nav .location::before {
+  content: "";
+  border-top: 2px solid var(--bluecolor);
+  width: 165px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  right: 320px;
+}*/

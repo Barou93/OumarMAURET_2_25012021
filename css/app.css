@@ -94,16 +94,18 @@ header {
 
 .main-nav .location {
   color: var(--bluecolor);
+  position: relative;
 }
 
 .main-nav .location::before {
   content: "";
-  border-top: 2px solid var(--bluecolor);
-  width: 165px;
-  height: 10px;
+  display: block;
   position: absolute;
-  top: 2px;
-  right: 320px;
+  bottom: 80px;
+  left: -15px;
+  width: 150px;
+  height: 4px;
+  background-color: #0065fc;
 }
 
 .main-nav .signin {
