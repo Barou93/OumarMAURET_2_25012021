@@ -126,6 +126,19 @@
     padding: 15px;
   }
 
+  .main-container {
+    position: relative;
+    top: 0;
+  }
+
+  .search-container {
+    margin-top: 30px;
+  }
+
+  .infos {
+    margin-top: 29px;
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -510,7 +523,7 @@
   }
 }
 */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 346px) {
   .main-container h1 {
     font-size: 20px;
   }
@@ -549,5 +562,81 @@
   }
   .family {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-nav .activities::after {
+    margin-left: -60px !important;
+  }
+
+  .main-nav .min-location::after {
+    margin-left: -60px !important;
+  }
+
+  .btn-2-min {
+    position: relative;
+    bottom: 45px;
+    left: 83%;
+    display: block;
+    background-color: var(--bluecolor);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .main-nav {
+    margin-left: -14px;
+  }
+  .main-nav .activities::after {
+    margin-left: -55px !important;
+  }
+
+  .main-nav .min-location::after {
+    margin-left: -35px !important;
+  }
+
+  .btn-1 .search {
+    font-size: 12px;
+  }
+
+  .btn-2-min {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    line-height: 30px;
+  }
+
+  .search-container {
+    margin-top: 28px;
+  }
+
+  .main-container {
+    position: relative;
+    top: 0;
+  }
+
+  .infos {
+    margin-top: 31px;
+  }
+
+  .cart-details h3,
+  .cart-details p {
+    font-size: 11px;
+    margin-left: -11px;
+  }
+
+  .lodgement h2,
+  .activite h2 {
+    font-size: 15px;
+  }
+
+  .cart-star-icons {
+    margin-top: 53px;
   }
 }
