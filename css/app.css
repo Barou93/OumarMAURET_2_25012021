@@ -585,3 +585,7 @@ footer h1 {
   margin-bottom: 12px;
   color: #000;
 }
+
+.footer-link:hover {
+  color: var(--bluecolor);
+}

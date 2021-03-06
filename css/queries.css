@@ -126,6 +126,15 @@
     padding: 15px;
   }
 
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main {
+    padding: 0;
+  }
+
   .filter-container {
     display: inline-block;
     margin-top: -20px;
@@ -272,12 +281,12 @@
   .aside {
     width: 100vw;
     margin-bottom: 50px;
-    margin-left: -35px;
+    margin-left: -3px;
     margin-bottom: 50px;
   }
   .aside-container {
-    width: 90%;
-    margin-left: -15px;
+    width: 100%;
+    margin-left: 0;
   }
   /* .cart-details {
     margin-right: 60%;
@@ -285,11 +294,17 @@
 
   .lodgement {
     background-color: #fff;
+    padding: 0;
+  }
+
+  .lodgement h2 {
+    margin-left: 20px;
   }
 
   .lodgement-container {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .lodgements-cart {
@@ -314,14 +329,24 @@
     margin-bottom: 20px;
   }
 
+  .other-page {
+    margin-top: 25px;
+  }
+
   .main .activites__list .activites__group {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    padding: 0;
+    padding: 20px;
     align-items: center;
     height: 73rem;
+  }
+
+  .title {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .main .activites__list .activites__group .activite {
@@ -358,7 +383,7 @@
     margin-left: 25px;
   }
 }
-
+/*
 @media screen and (max-width: 495px) {
   .btn-2 {
     display: none;
@@ -378,7 +403,7 @@
   .lodgement-container {
     margin-left: -40px;
   }
-}
+  , }
 
 @media screen and (max-width: 400px) {
   .aside-container {
@@ -484,7 +509,7 @@
     font-size: 12px;
   }
 }
-
+*/
 @media screen and (max-width: 320px) {
   .main-container h1 {
     font-size: 20px;
@@ -524,10 +549,5 @@
   }
   .family {
     margin-left: 0;
-  }
-
-  .lodgement-container {
-    width: 165% !important;
-    margin-left: -65px !important;
   }
 }
