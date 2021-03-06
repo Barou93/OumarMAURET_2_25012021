@@ -31,9 +31,8 @@ a {
 }
 
 a:hover {
-  color: #0065FC;
+  color: #0065fc;
   transform: scale(1.01);
-}
 }
 
 h2 {
@@ -141,7 +140,6 @@ header {
 }
 
 .btn-1 .gps {
-  /*
   background-color: var(--greycolor);
   height: 50px;
   width: 50px;
@@ -150,7 +148,7 @@ header {
   text-align: center;
   font-size: 1.2rem;
   border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;*/
+  border-bottom-left-radius: 10px;
 }
 
 .btn-1 .search {
@@ -284,7 +282,6 @@ input::placeholder {
 /*========Menu Principal Hébergements======*/
 
 main {
-  /*margin-top: 50px;*/
   margin: 0 auto;
   padding: 25px;
 }
@@ -442,17 +439,11 @@ main {
 }
 
 .cart-details {
-  /* display: flex;
-  /* flex-direction: column; */
   display: flex;
   flex-direction: column;
-  /* float: right; */
+
   margin-top: -125px;
   margin-left: 120px;
-
-  /* float: right;
-  margin-top: 20px;
-  margin-right: 35px; */
 }
 
 .cart-details h3 {

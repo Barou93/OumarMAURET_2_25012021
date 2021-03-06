@@ -71,7 +71,6 @@
     height: 50px;
     border: 1px solid var(--greycolor);
     font-size: 18px;
-    /*font-weight: bold;*/
   }
 
   .search-icons {
@@ -301,9 +300,6 @@
     width: 100%;
     margin-left: 0;
   }
-  /* .cart-details {
-    margin-right: 60%;
-  } */
 
   .lodgement {
     background-color: #fff;
@@ -323,7 +319,6 @@
   .lodgements-cart {
     flex: 0;
     flex-direction: column;
-    /*margin-left: 32px;*/
   }
 
   .cart-details {
@@ -396,133 +391,7 @@
     margin-left: 25px;
   }
 }
-/*
-@media screen and (max-width: 495px) {
-  .btn-2 {
-    display: none;
-  }
 
-  .lodgement-container {
-    width: 120%;
-    margin-left: -45px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .lodgement h2 {
-    margin-left: -25px;
-    font-size: 22px;
-  }
-  .lodgement-container {
-    margin-left: -40px;
-  }
-  , }
-
-@media screen and (max-width: 400px) {
-  .aside-container {
-    width: 100%;
-  }
-
-  .aside-cart {
-    min-width: 60%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .filter-container {
-    display: inline-block;
-  }
-
-  .filter-mini {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .filter-categories {
-    display: block;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .eco {
-    width: 160px;
-  }
-
-  .family {
-    margin-left: 10px;
-  }
-
-  .filter-details {
-    font-size: 13px;
-  }
-
-  .infos .news {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 10px;
-  }
-  .infos p {
-    font-size: 12px;
-  }
-  .main {
-    margin: 20px;
-  }
-
-  .lodgement h2 {
-    font-size: 20px;
-    margin-left: -40px;
-  }
-
-  .lodgement-container {
-    width: 165% !important;
-    margin-left: -80px !important;
-  }
-
-  .other-page {
-    margin-left: 0;
-  }
-
-  .title {
-    margin-left: -40px;
-    font-size: 25px;
-  }
-
-  .aside {
-    width: 100vw;
-    margin-left: -50px !important;
-  }
-
-  .aside-container {
-    width: 85vw;
-  }
-
-  .aside-container img {
-    height: 140px;
-    border-bottom-left-radius: none;
-    border-top-right-radius: 10px;
-  }
-
-  .other-page a {
-    font-size: 15px;
-    position: relative;
-    right: 60px;
-    bottom: 20px;
-  }
-
-  .main .activites__list .activites__group {
-    width: 125% !important;
-    margin-left: -35px;
-  }
-  .cart-details {
-    margin-top: -150px;
-  }
-
-  .cart-details h3 p {
-    font-size: 12px;
-  }
-}
-*/
 @media screen and (max-width: 346px) {
   .main-container h1 {
     font-size: 20px;
