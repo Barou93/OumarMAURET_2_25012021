@@ -1,5 +1,11 @@
 /*=============MEDIA QuERIES================*/
 
+:root {
+  --bluecolor: #0065fc;
+  --greycolor: #f2f2f2;
+  --greydarkcolor: #d9d9d9;
+}
+
 @media screen and (min-width: 1024px) {
   .lodgements-details h3 {
     font-size: 13px;
@@ -133,6 +139,36 @@
     top: 0;
   }
 
+  .main-nav {
+    width: 100vw;
+    position: relative;
+    margin-top: -25px !important;
+    margin-bottom: 25px;
+  }
+
+  .main-nav .location:hover,
+  .main-nav .activities:hover {
+    border-top: none;
+  }
+
+  nav ul li {
+    border-bottom: 2.5px solid var(--greycolor);
+    padding-bottom: 15px;
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  .menu-item:hover {
+    border-top: none;
+    color: var(--bluecolor);
+    /*padding-bottom: 60px;*/
+    border-bottom: 2px solid var(--bluecolor);
+  }
   .search-container {
     margin-top: 30px;
   }
@@ -222,7 +258,6 @@
   }
 
   .min-nav {
-    display: block;
     align-items: center;
     flex-direction: column;
   }
@@ -255,14 +290,15 @@
     margin-top: 40px;
   }
   .main-nav li {
-    display: flex;
-    margin: 20px;
+    display: block;
+    margin-top: 35px;
+    margin-left: 0;
   }
 
   .main-nav .location::before {
     display: none;
   }
-
+  /*
   .main-nav .min-location::after {
     margin-left: -60px !important;
     content: "";
@@ -282,7 +318,7 @@
     width: 50vw;
     margin: 0;
     padding: 8px;
-  }
+  }*/
 
   .group {
     display: flex;
