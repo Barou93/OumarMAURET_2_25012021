@@ -68,6 +68,8 @@ header {
 .navbar {
   display: flex;
   align-items: center;
+  min-width: 280px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -77,19 +79,38 @@ header {
   width: 50px;
 }
 
+.group-list {
+  display: flex;
+}
+
 .main-nav {
-  float: right;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
 }
 
 .main-nav li {
   display: inline-block;
-  margin-left: 80px;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #000;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-right: 40px;
+}
+
+.signin a {
+  padding: 0 20px;
+  font-weight: bold;
+  color: var(--bluecolor);
 }
 
 nav ul li {
@@ -113,25 +134,10 @@ nav ul li {
   border-top: 2px solid #0065fc;
   color: var(--bluecolor);
 }
-/*
-.main-nav .location::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 80px;
-  left: -15px;
-  width: 150px;
-  height: 4px;
-  background-color: #0065fc;
-}*/
 
 .main-nav .signin {
   color: var(--bluecolor);
   font-weight: bold;
-}
-
-.min-signup {
-  display: none;
 }
 
 /*=====Header paragraphe======*/

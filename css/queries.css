@@ -139,13 +139,6 @@
     top: 0;
   }
 
-  .main-nav {
-    width: 100vw;
-    position: relative;
-    margin-top: -25px !important;
-    margin-bottom: 25px;
-  }
-
   .main-nav .location:hover,
   .main-nav .activities:hover {
     border-top: none;
@@ -169,7 +162,12 @@
     /*padding-bottom: 60px;*/
     border-bottom: 2px solid var(--bluecolor);
   }
-  .search-container {
+
+  .group-list {
+    display: block;
+  }
+
+  .min-signup .search-container {
     margin-top: 30px;
   }
 
@@ -257,38 +255,26 @@
     font-weight: bold;
   }
 
-  .min-nav {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .signin {
-    display: none;
-  }
-
-  .logo {
-    float: none;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .min-signup {
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: 150px;
+    left: 25px;
     text-decoration: none;
     color: var(--bluecolor);
     font-weight: bold;
   }
 
   .main-nav {
-    float: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
+    flex-grow: 1;
+    order: 3;
+    width: 100vw;
+    margin-left: -35px;
+    margin-right: -35px;
+    margin-bottom: 20px;
   }
+
   .main-nav li {
     display: block;
     margin-top: 35px;
@@ -298,27 +284,6 @@
   .main-nav .location::before {
     display: none;
   }
-  /*
-  .main-nav .min-location::after {
-    margin-left: -60px !important;
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--bluecolor);
-    padding: 8px;
-    margin: 0;
-    width: 50vw;
-  }
-
-  .main-nav .activities::after {
-    margin-left: -40px !important;
-    margin-top: 0px !important;
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--greydarkcolor);
-    width: 50vw;
-    margin: 0;
-    padding: 8px;
-  }*/
 
   .group {
     display: flex;
@@ -548,13 +513,3 @@
     margin-top: 53px;
   }
 }
-
-/*.main-nav .location::before {
-  content: "";
-  border-top: 2px solid var(--bluecolor);
-  width: 165px;
-  height: 10px;
-  position: absolute;
-  top: 2px;
-  right: 320px;
-}*/
