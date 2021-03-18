@@ -6,7 +6,10 @@
     <title>
       Reservia | trouvez votre hébergement pour des vacances de rêve
     </title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Reservia | trouvez votre hébergement pour des vacances de rêve"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/app.css" />
@@ -31,29 +34,35 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <nav class="navbar min-nav">
-          <div class="logo min-logo">
+          <div class="header_logo">
             <a href="index.html"
               ><img src="images/logo/Reservia.svg" alt="Logo Reservia"
             /></a>
-            <a href="#" class="min-signup">S'inscrire</a>
+
           </div>
-          <ul class="main-nav min-main-nav">
-            <li class="menu-item">
-              <a href="#hebergements" class="location min-location"
-                >Hébergements</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="#activites" class="activities">Activités</a>
-            </li>
-            <li><a href="#" class="signin">S'inscrire</a></li>
-          </ul>
+          <div class="group-list">
+
+            <ul class="main-nav min-main-nav">
+              <li class="menu-item">
+                <a href="#hebergements" class="location min-location"
+                  >Hébergements</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="#activites" class="activities">Activités</a>
+              </li>
+            </ul>
+            <div class="signin min-signup">
+                <a href="#"">S'inscrire</a>
+            </div>
+        
+          </div>
         </nav>
         <div class="main-container">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-
+  
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div class="search-container">
@@ -72,7 +81,7 @@
         </div>
         <div class="filter-container">
           <h1>Filtres</h1>
-
+  
           <div class="filter-mini">
             <div class="filter-categories eco">
               <i class="fas fa-money-bill-wave filter-icons"></i
